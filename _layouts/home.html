@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{%- include layouts/about.html -%}
+{%- include layouts/menu.html -%}
+{%- assign latestPost = site.blog -%}
+<article class="menu-grid maxwidth-lg pt-3h p-menu">
+    {%- for item in latestPost limit: 8 -%}
+        <div class="menu-grid-item pb-2">
+            <div class="">
+                <img src="{{ item.featured-image | prepend: site.url }}" alt="" class="height obj-fit-cover width menu-image">
+            </div>
+            <div class="">
+                <h3 class="smalltext pt-1">
+                    {{ item.title }}
+                </h3>
+                <p class="picotext co-sweetgray pt-hh">
+                    {{ item.description }}
+                </p>
+            </div>
+            <button class="menu-button fw-bold">Order Now</button>
+        </div>
+    {%- endfor -%}
+</article>
+
+{%- include layouts/contact.html -%}

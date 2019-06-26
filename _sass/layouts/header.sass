@@ -1,0 +1,173 @@
+// Header
+
+    // @package 22
+    // @author  Kabolobari Benakole <i@kb.life>
+
+.site-header
+    .logo
+        svg
+            width:          45px
+            height:         45px
+
+.page-title
+    &::after
+        content:            ''
+        display:            block
+        height:             1px
+        margin-top:         1.5rem
+        background-color:   #ddd
+
+.affixed
+    position:               fixed
+    right:                  0
+    left:                   0
+    background-color:       #fff
+    transition:             transform 0.5s ease
+    z-index:                10
+    &.to-top
+        top:                0
+        transform:          translateY(-100%)
+        &.in-view
+            transform:      translateY(0)
+    &.to-bottom
+        bottom:             0
+        transform:          translateY(100%)
+        &.in-view
+            transform:      translateY(0)
+.mobile-header
+    padding:                 0 1rem
+    display:                flex
+    justify-content:        space-between
+    align-items:            center
+    position:               fixed
+    width:                  100%
+    top:                    0
+    left:                   0
+    z-index:                999
+    background-color:       $white
+    @media #{ $smallup }
+        display:            block
+
+.d-ib
+    ul
+        width: 200px
+        margin: 0
+        li
+            display: inline
+.logo-holder
+    width: 140px
+    @media #{ $smallup }
+        margin: 0 auto
+
+.site-footer
+    p
+        line-height:            0.75
+.header-image-container
+    position:                   relative
+
+.header-image
+    margin-top:                 80px
+    height:                     232px
+    width:                      100%
+    object-fit:                 cover
+    @media #{ $smallup }
+        padding-top:            0px
+    @media #{ $mediumup }
+        height:                 300px
+    @media #{$sslaptop }
+        height:                 520px
+    
+
+.div-container
+    text-align:                 center
+
+.input-field
+    background-color:           rgba(255, 255, 255, 0.7)
+    padding:                    2rem 10px 10px 10px
+    position:                   absolute
+    top:                        50%
+    margin-top:                 -15%
+    margin-right:                15px
+    margin-left:                 15px
+    border-radius:               4px
+    @media #{ $xsmallup }
+        display:                inline-block
+        padding-top:            10px
+        right:                  0px
+        left:                   0px
+        margin-top:             0px
+    @media #{ $smallup }
+        margin-left:            52px
+        margin-right:           20px
+        padding-top:            20px
+        padding-bottom:         20px
+        bottom:                 39px
+        top:                    83px
+        width:                  430px
+    @media #{ $smediumup }
+        padding:                20px 20px 20px 10px
+        margin-left:            130px
+        margin-right:           20px
+        top:                    83px
+        bottom:                 39px
+    @media #{ $mediumup }
+        padding:                30px 20px
+        top:                    101px
+        bottom:                 72px
+        left:                   151px
+        width:                  463px
+        margin-left:            0px
+        margin-right:           0px
+    @media #{ $sslargeup }
+        left:                   230px
+    @media #{ $slaptop }
+        left:                   180px
+        top:                    107px
+        bottom:                 66px
+        width:                  677px
+    @media #{$sslaptop }
+        left:                   363px
+        top:                    202px
+        bottom:                 180px
+
+    span 
+        padding:                0.75rem 
+        background:             white
+        margin-right:           0
+        border-radius:          4px
+        @media #{ $mediumup }
+            // padding:            1rem
+        svg
+            margin-right:       10px
+            padding-right:      0        
+        input
+            border:             none
+            padding-left:       7px
+            border-left:        1px solid #DADADA
+            @media #{ $mediumup }
+                width:          232px
+            @media #{ $slaptop }
+                width:          424px
+            &:hover, &:focus
+                outline:         none
+            &::placeholder
+                color:           #999999
+    button
+        align-content:          center
+        width:                  110px
+        height:                 42px
+        margin-left:            4px
+        color:                  $white
+        font-weight:            bold
+        background:             $primarycolor
+        border-radius:          4px
+        margin-top:             1rem
+        padding-top:            0.5rem
+        @media #{ $smallup }
+            width:              120px
+            margin-left:        10px
+        @media #{ $mediumup }
+            width:              125px
+        @media #{ $slaptop }
+            width:              146px
+

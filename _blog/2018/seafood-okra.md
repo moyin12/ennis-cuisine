@@ -1,0 +1,6 @@
+---
+title: Seafood Okra
+description: Wraps of Soft and Smoothly made pounded yam.
+featured-image: /uploads/beef-stew.jpg
+theme: Soups
+---

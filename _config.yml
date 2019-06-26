@@ -1,0 +1,51 @@
+title: Ennis Cuisine
+email: enniscuisine14@gmail.com
+phoneno: 07081041593
+description: >- 
+  Ennis cuisine is a food delivery business.
+  Ennis cuisine is a food delivery business.Ennis cuisine
+  is a food delivery business.Ennis cuisine is a food delivery business.
+url: 'https://enniscuisine.surge.sh' 
+twitter: 'https://twitter.com/ennis_cuisine'
+
+
+# Build settings
+markdown: kramdown
+
+# Handling Reading
+charset: "utf-8"
+
+# Collections
+collections:
+  uploads:
+    title:  Uploads (Media & Files)
+    output: true
+  blog:
+    output: true
+  themes:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      type: blog
+    values:
+      permalink: '/:title/'
+      
+  
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Files to exclude on build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - ".gitignore"
+
