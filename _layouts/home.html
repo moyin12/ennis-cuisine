@@ -2,7 +2,8 @@
 layout: default
 ---
 {%- include layouts/about.html -%}
-{%- include layouts/menu.html -%}
+{%- include layouts/menu-banner.html -%}
+{%- include layouts/gallery.html -%}
 {%- assign latestPost = site.blog -%}
 <article class="menu-grid maxwidth-lg pt-3h p-menu">
     {%- for item in latestPost limit: 8 -%}

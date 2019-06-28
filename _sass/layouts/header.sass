@@ -39,14 +39,14 @@
     display:                flex
     justify-content:        space-between
     align-items:            center
-    position:               fixed
     width:                  100%
-    top:                    0
-    left:                   0
-    z-index:                999
     background-color:       $white
     @media #{ $smallup }
         display:            block
+    a
+        svg
+            width: 80px
+            height: 80px
 
 .d-ib
     ul
@@ -62,107 +62,41 @@
 .site-footer
     p
         line-height:            0.75
-.header-image-container
-    position:                   relative
 
-.header-image
-    margin-top:                 80px
-    height:                     232px
-    width:                      100%
-    object-fit:                 cover
-    @media #{ $smallup }
-        padding-top:            0px
-    @media #{ $mediumup }
-        height:                 300px
-    @media #{$sslaptop }
-        height:                 520px
     
-
-.div-container
-    text-align:                 center
-
-.input-field
-    background-color:           rgba(255, 255, 255, 0.7)
-    padding:                    2rem 10px 10px 10px
-    position:                   absolute
-    top:                        50%
-    margin-top:                 -15%
-    margin-right:                15px
-    margin-left:                 15px
-    border-radius:               4px
-    @media #{ $xsmallup }
-        display:                inline-block
-        padding-top:            10px
-        right:                  0px
-        left:                   0px
-        margin-top:             0px
-    @media #{ $smallup }
-        margin-left:            52px
-        margin-right:           20px
-        padding-top:            20px
-        padding-bottom:         20px
-        bottom:                 39px
-        top:                    83px
-        width:                  430px
-    @media #{ $smediumup }
-        padding:                20px 20px 20px 10px
-        margin-left:            130px
-        margin-right:           20px
-        top:                    83px
-        bottom:                 39px
+.header-image-container
+    position: relative
+    background-image:  linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://res.cloudinary.com/moyin/image/upload/v1561560631/jollof-1.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    height: 200px
     @media #{ $mediumup }
-        padding:                30px 20px
-        top:                    101px
-        bottom:                 72px
-        left:                   151px
-        width:                  463px
-        margin-left:            0px
-        margin-right:           0px
-    @media #{ $sslargeup }
-        left:                   230px
-    @media #{ $slaptop }
-        left:                   180px
-        top:                    107px
-        bottom:                 66px
-        width:                  677px
-    @media #{$sslaptop }
-        left:                   363px
-        top:                    202px
-        bottom:                 180px
+        height: 500px
+        
 
-    span 
-        padding:                0.75rem 
-        background:             white
-        margin-right:           0
-        border-radius:          4px
-        @media #{ $mediumup }
-            // padding:            1rem
-        svg
-            margin-right:       10px
-            padding-right:      0        
-        input
-            border:             none
-            padding-left:       7px
-            border-left:        1px solid #DADADA
-            @media #{ $mediumup }
-                width:          232px
-            @media #{ $slaptop }
-                width:          424px
-            &:hover, &:focus
-                outline:         none
-            &::placeholder
-                color:           #999999
+.header-text-button
+    text-align: center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 300px
+    @media #{ $mediumup }
+        width: 550px
+    h1
+        padding: 0 2rem
+        
     button
-        align-content:          center
-        width:                  110px
-        height:                 42px
-        margin-left:            4px
+        width:                  100px
+        height:                 40px
         color:                  $white
         font-weight:            bold
+        font-size:              1rem
         background:             $primarycolor
         border-radius:          4px
         margin-top:             1rem
-        padding-top:            0.5rem
+        padding:                0.5rem
         @media #{ $smallup }
             width:              120px
             margin-left:        10px

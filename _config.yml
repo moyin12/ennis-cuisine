@@ -20,19 +20,13 @@ collections:
   uploads:
     title:  Uploads (Media & Files)
     output: true
-  blog:
-    output: true
   themes:
     output: true
 
-# Defaults
-defaults:
-  - scope:
-      type: blog
-    values:
-      permalink: '/:title/'
       
-  
+# Extraneous folders to include
+include: 
+  - _pages
 
 # Handling Sass
 sass:

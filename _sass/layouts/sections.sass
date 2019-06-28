@@ -1,114 +1,44 @@
 // 
     // Very Specific Section Decorations/Markers
 
-    // @package 22
-    // @author  Kabolobari Benakole <i@kb.life>
+    // @package enniscuisine
+    // @author  Moyinoluwa Ariyo
 
-.page-body
-    font-size:              $smallfont
-    p
-        color:              $readablegray
-    section
-        h3
-            margin-top:     0
 
-.pad-main-top-bottom
-    padding-top:            5.72rem
-    padding-bottom:         4.48rem
-
-.footnotes
-    position:               relative
-    padding:                $space
-    background-color:       $platinum
-    border:                 1px solid #eee
-    border-left:            4px solid $primarycolor
-    font-size:              $microfont
-    color:                  $readablegray
-    h3
-        font-size:          $mediumfont
-        line-height:        1
-        &:first-of-type
-            margin-top:     0
-    p
-        &:last-of-type
-            margin-bottom:  0
-    &::after
-        content:            'i'
-        position:           absolute
-        top:                17px
-        left:               -14px
-        color:              #fff
-        width:              24px
-        height:             24px
-        background-color:   $primarycolor
-        text-align:         center
-        font-weight:        $bold
-    .company
-        +caps($nanofont, $bold, uppercase, $headingls)
-        display:            block
-        text-indent:        1rem
-    ul, ol
-        margin-bottom:      0
-
-.pagination
-    svg
-        width:              20px
-        height:             20px
-
-.all-updates
-    article
-        &:last-child a
-            border-bottom:  none
-
-// Post/Page Summary
-.summary
-    padding-left:           $space-sm
-    border:                 0
-    border-left:            4px solid #ddd
-    font-size:              $largefont
-    font-family:            $headingfont
-    line-height:            $headinglh
-    color:                  $sweetgray
-    transform:              skew(-4deg)
-
-// Blockquotes
-blockquote
-    margin:                 $space-sm
+.menu-banner
+    background-color:               $primarycolor
+    padding:                        1rem 0.5rem
+    margin:                         2rem 0
+    text-align:                     center
     @media #{ $smallup }
-        margin:             $space-md
-    p
-        margin-bottom:      0
-        @extend .summary
-        border-left-width:  4px
-        border-left-style:  solid
-        border-image:       linear-gradient(to top, #ddd 47.5%, #fff 47.5%, #fff 52.5%, $primarycolor 52.5%) 1
-        font-size:          $largefont!important
-        cite
-            display:        block
-            font-size:      $microfont
-
-.story-break
-    margin-top:             2.25rem
-    margin-bottom:          1.95rem
-    line-height:            0
-
-// Welcome Layout
-.welcome-container
-    // width: 100%
-    background-color: gray
-    display: grid
+        display:                    flex
+        justify-content:            space-between
+        align-items:                baseline
+        padding:                    2rem 1rem
+        margin:                     3rem 0
     @media #{ $mediumup }
-        grid-template-columns: 70% 30%
-
-.welcome-image
-    @media #{ $smallup }
-        height: 280px
-    @media #{ $mediumup }
-        height: 320px
-    img 
-        height: 200px
-        width:  100%
+        padding:                    2rem 8rem
+    @media #{ $largeup }
+        padding:                    3rem 13rem
+        margin:                     5rem 0
+        
+    button
+        background-color:           $white
+        padding:                    0.5rem
+        margin-top:                 0.5rem
+        border-radius:              4px
         @media #{ $smallup }
-            height: 100%
-        @media #{ $mediumup }
-            height: 100%
+            margin-top:             0
+
+.gallery-grid
+    display:                        grid
+    grid-gap:                       25px
+    grid-template-columns:          repeat(auto-fit, minmax(200px, 1fr))
+    width:                          250px
+    margin:                         2rem auto
+    @media #{ $mediumup }
+        width:                      500px
+        margin:                     4rem auto
+    @media #{ $largeup }
+        width:                      900px
+        // margin:                     6rem auto
